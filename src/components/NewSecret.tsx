@@ -88,7 +88,7 @@ export default function NewSecret({ isEdit = false }: { isEdit?: boolean }) {
             <h1
                 className='text-2xl font-bold'
             >
-                {isEdit ? 'Edit' : 'New'} Secret Key Manager
+                {isEdit ? 'Edit' : 'New'} Secret
             </h1>
             {loading ?
                 <>

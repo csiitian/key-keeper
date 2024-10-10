@@ -8,6 +8,7 @@ export default function ListSecret() {
 
     const fetchSecrets = async () => {
         const secrets = await db.secrets.toArray();
+        secrets.sort((a, b) => b.id - a.id);
         setSecrets(secrets);
     }
 
